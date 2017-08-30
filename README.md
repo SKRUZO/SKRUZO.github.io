@@ -1,3 +1,4 @@
 # SKRUZO.github.io
 
-My startpage
+My personal startpage. 
+Made using code from several other startpage templates. 
