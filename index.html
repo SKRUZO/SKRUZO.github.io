@@ -1,207 +1,118 @@
 <!DOCTYPE html>
 
+<html>
+
+<!-- 
+	Multipurpose aesthetically appealing and partially forked adaptive startpage that displays a lot of useless information
+-->
+
 <head>
-    <meta charset="UTF-8">
-    <title>SKRUZO's Frontpage</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <meta name="theme-color" content="#222">
-    <link rel="stylesheet" href="css/modern.css">
-    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
-    <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" sizes="128x128" href="images/skruzo.png" />
+	<link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<title>&lrm;</title>
+
 </head>
 
 <body>
-    <div class="container">
-        <div id="header"><span id="header-time"></span></div>
-        <script type="text/javascript">
-            var dt = new Date();
-            minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
-            second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
-            var time = dt.getHours() + ":" + minute + ":" + second;
 
-            $("#header-time").text(time);
+	<div class="BG"></div>
+	
+	<div class="Main-container">
+		
+		<div class="Time-container">
+			<br><br>
+			<p class="TimeHMS" id="Time"></p>
+			<br>
+			<p class="TimeDate" id="Date"></p>
+		</div>
+		
+		<div class="Search-container">
+			<input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false" onfocus="blurBG()" oninput="blurBG()" onblur="unblurBG()" />
+			<span class="Bar"></span>
+		</div>
+		
+		<div class="Link-container">
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/c.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.reddit.com/" class="Link">Frontpage</a>
+					<a href="https://www.reddit.com/r/all" class="Link">r/All</a>
+					<a href="https://www.reddit.com/r/thedickshow" class="Link">r/TheDickShow</a>
+					<a href="https://www.reddit.com/r/titanfall" class="Link">r/Titanfall</a>
+					<a href="https://www.reddit.com/r/guildwars2" class="Link">r/Guildwars2</a>
+					<a href="https://www.reddit.com/r/mechanicalkeyboards" class="Link">r/MK</a>
+					<a href="https://www.reddit.com/r/motorcycles" class="Link">r/Motorcycles</a>
+				</div>
+			</div>
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/a.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://secure1.inmotionhosting.com/index/login" class="Link">Inmotion</a>
+					<a href="https://www.iplocation.net/" class="Link">IP Location</a>
+					<a href="https://github.com/SKRUZO" class="Link">Github</a>
+					<a href="https://console.aws.amazon.com/console/" class="Link">AWS Console</a>
+					<a href="https://cloud.google.com/vision/" class="Link">Google Vision</a>
+					<a href="http://downdetector.com" class="Link">Downdetector</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/b.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.youtube.com" class="Link">Youtube</a>
+					<a href="https://www.netflix.com" class="Link">Netflix</a>
+					<a href="https://www.amazon.com/Prime-Video/b?node=2676882011" class="Link">Amazon Video</a>
+					<a href="http://www.twitch.tv" class="Link">Twitch</a>
+					<a href="https://xkcd.com/" class="Link">XKCD</a>
+					<a href="http://www.scp-wiki.net" class="Link">SCP Wiki</a>
+					<a href="https://www.patreon.com/thedickshow/posts" class="Link">Dick Show</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/d.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.neogaf.com/forum/forumdisplay.php?f=2" class="Link">NEOGaf</a>
+					<a href="https://news.ycombinator.com/" class="Link">Hacker News</a>
+					<a href="http://www.jemgaming.net/" class="Link">Jemgaming</a>
+					<a href="https://forum.xda-developers.com/" class="Link">XDA Forum</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/f.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://inbox.google.com" class="Link">Inbox</a>
+					<a href="http://www.olympic.edu" class="Link">Olympic</a>
+					<a href="https://drive.google.com/drive/my-drive" class="Link">Google Drive</a>
+					<a href="https://amazon.com" class="Link">Amazon</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/e.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="http://dirpy.com" class="Link">Dirpy</a>
+					<a href="http://youtubeinmp3.com" class="Link">YtiMP3</a>
+					<a href="https://streamable.com/" class="Link">Streamable</a>
+					<a href="hhttps://color.adobe.com/create/color-wheel" class="Link">Color Wheel</a>
+					<a href="http://fontawesome.io/cheatsheet/" class="Link">Font Awesome</a>
+					<a href="http://achecker.ca/checker/index.php" class="Link">Cont. Check</a>
+				</div>
+			</div>
+		</div>
+	
+	</div>
 
-            setInterval(function(){
-                dt = new Date();
-                minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
-                second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
-                time = dt.getHours() + ":" + minute + ":" + second;
-                console.log(time);
-                $("#header-time").text(time);
-
-            },1000);
-        </script>
-        <div class="search-row">
-            <input id="search-field" type="text" name="search-field" placeholder="Enter query..." onkeypress="return search(event)" autofocus="true"/>
-            <script type="text/javascript">
-            function search(e) {
-                if (e.keyCode == 13) {
-                    var val = $("#search-field").val();
-                    window.location = "https://duckduckgo.com/?q=" + val + "&kp=1&kh=1&kg=p&k5=1&kae=d&k1=-1";
-                    return false;
-                }
-            }
-            </script>
-        </div>
-    </div>
-    <div class="section">
-        <div class="list reddit">
-            <h1><a href="https://www.reddit.com/">Reddit</a></h1>
-            <ul>
-                <li><a href="https://www.reddit.com/r/all/">/r/All</a></li>
-                <li><a href="http://www.reddit.com/r/thedickshow/">/r/TheDickShow</a></li>
-                <li><a href="https://www.reddit.com/r/titanfall/">/r/Titanfall</a></li>
-                <li><a href="https://www.reddit.com/r/mechanicalkeyboards/">/r/MechanicalKeyboards</a></li>
-                <li class="dropdown"> More
-                    <ul>
-                        <li><a href="https://www.reddit.com/r/motorcycles/">/r/Motorcycles</a></li>
-                        <li><a href="https://www.reddit.com/r/homelab/">/r/HomeLab</a></li>
-                        <li><a href="https://www.reddit.com/r/edc/">/r/EDC</a></li>
-                        <li><a href="https://www.reddit.com/r/scp/">/r/SCP</a></li>
-                        <li><a href="https://www.reddit.com/r/yms/">/r/YMS</a></li>
-                        <li><a href="https://www.reddit.com/r/guildwars2/">/r/GuildWars2</a></li>
-                        <li><a href="https://www.reddit.com/r/overwatch/">/r/Overwatch</a></li>
-                        <li><a href="https://www.reddit.com/r/rickandmorty/">/r/RickandMorty</a></li>
-                        <li><a href="https://www.reddit.com/r/discordapp/">/r/DiscordApp</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="list admin">
-            <h1>Dev stuff</h1>
-            <ul>
-                <li><a href="https://secure1.inmotionhosting.com/index/login">InMotion Hosting</a></li>
-                <li><a href="https://www.iplocation.net/">IP Geo Location</a></li>
-                <li><a href="https://github.com/SKRUZO">Github</a></li>
-                <li><a href="https://console.aws.amazon.com/console/">AWS Console</a></li>
-                <li class="dropdown"> More
-                    <ul>
-                        <li><a href="https://www.name.com/">Name.com</a></li>
-                        <li><a href="https://analytics.google.com/analytics/web/">Google Analytics</a></li>
-                        <li><a href="https://www.google.com/webmasters/tools/home">Google Web master</a></li>
-                        <li><a href="https://cloud.google.com/vision/">Google Vision API</a></li>
-                        <li><a href="http://downdetector.com/">Downdetector</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="list social">
-            <h1>Social media</h1>
-            <ul>
-                <li><a href="https://www.linkedin.com/">Linkedin</a></li>
-                <li><a href="http://stackoverflow.com/">StackOverflow</a></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-                <li><a href="http://codepen.io/">Codepen</a></li>
-            </ul>
-        </div>
-        <div class="list fun">
-            <h1>Entertainment</h1>
-            <ul>
-                <li><a href="https://www.youtube.com/feed/subscriptions">Youtube</a></li>
-                <li><a href="https://www.netflix.com">Netflix</a></li>
-                <li><a href="https://www.amazon.com/Prime-Video/b?node=2676882011">Amazon Video</a></li>
-                <li><a href="http://www.twitch.tv/">Twitch</a></li>
-                <li class="dropdown"> More
-                    <ul>
-                        <li><a href="https://xkcd.com/">XKCD</a></li>
-               			<li><a href="http://www.scp-wiki.net/">SCP Foundation</a></li>
-               			<li><a href="https://www.patreon.com/thedickshow/posts">The Dick Show Patreon</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="list orangyred">
-            <h1>Forums</h1>
-            <ul>
-                <li><a href="https://forum.xda-developers.com/">XDA Dev Forum</a></li>
-                <li><a href="https://www.neogaf.com/forum/forumdisplay.php?f=2">NeoGAF</a></li>
-                <li><a href="https://news.ycombinator.com/">Hacker News</a></li>
-                <li><a href="http://jemgaming.net/">Jemgaming</a></li>
-                <li class="dropdown"> More
-                    <ul>
-                        <li><a href="#">&nbsp;</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="list">
-            <h1>Personal sites</h1>
-            <ul>
-                <li><a href="https://inbox.google.com">Inbox</a></li>
-                <li><a href="http://olympic.edu/">Olympic</a></li>
-                <li><a href="https://drive.google.com/drive/my-drive">Google Drive</a></li>
-                <li><a href="https://amazon.com">Amazon</a></li>
-                <li class="dropdown"> More
-                    <ul>
-                        <li><a href="#">&nbsp;</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="list blueyish">
-            <h1>Web tools</h1>
-            <ul>
-                <li><a href="https://color.adobe.com/create/color-wheel">Adobe Color Wheel</a></li>
-                <li><a href="http://fontawesome.io/cheatsheet/">Font Awesome Cheat Sheet</a></li>
-                <li><a href="http://achecker.ca/checker/index.php">Accesibility checker</a></li>
-                <li><a href="https://pixlr.com/editor/">Pixlr</a></li>
-                <li class="dropdown"> More
-                    <ul>
-                        <li><a href="https://icons8.com/">Icons8</a></li>
-                        <li><a href="https://streamable.com/">Streamable</a></li>
-                        <li><a href="http://webaim.org/resources/contrastchecker">Contrast checker</a></li>
-                        <li><a href="http://dirpy.com">Dirpy</a></li>
-                        <li><a href="http://youtubeinmp3.com/">YtIMP3</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <!--
-
-    <div><br></div>
-    <div class="terminal-con">
-            <div class="terminal-row ext-top">
-                <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
-            </div>
-            <div class="terminal-row">
-                <div class="terminal-label i1"><span class="hl-gray">Welcome <span class="hl-blue">SKRUZO</span>.</span></div>
-            </div>
-            <div class="terminal-row">
-                <div class="terminal-label i1"><span class="hl-gray">Current Date/Time: </span></div>
-                <div id="time"></div>
-                <script type="text/javascript">
-                    var dt = new Date();
-                    var time = dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-
-                    $("#time").text(time);
-
-                    setInterval(function(){
-                        dt = new Date();
-                        time = dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-                        console.log(time);
-                        $("#time").text(time);
-
-                    },1000);
-                </script>
-            </div>
-            <div class="terminal-row">
-                <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
-            </div>
-            <div class="terminal-row">
-                <div class="terminal-label i1"><span class="hl-gray">Have a great day!</span></div>
-            </div>
-    </div>
-    <div class="terminal-innerCon ext-btm" style="height: 00px;">
-            </div>
-
-    -->
-    <script>
-        setTimeout(function () {
-            document.body.className = "";
-        }, 1000);
-    </script>
+	<script src="Script/jquery.simpleWeather.min.js"></script>
+	<script src="Script/main.js"></script>
+	<script src="Script/search.js"></script>
+	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	
 </body>

@@ -1,4 +1,3 @@
-# SKRUZO.github.io
+# Modified version of TheProtagonists' SPECTRUMStartpageV3
+WIP personal startpage.
 
-My personal startpage. 
-Made using code from several other startpage templates. 
