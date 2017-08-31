@@ -10,14 +10,9 @@ function search(query){
 			window.location = "https://www.reddit.com/r/" + query;
 			break;
             
-		case "-wa":
+		case "---":
 			query = query.substr(4);
-			window.location = "https://wall.alphacoders.com/search.php?search=" + query;
-			break;
-
-		case "-wh":
-			query = query.substr(4);
-			window.location = "http://alpha.wallhaven.cc/search?q=" + query;
+			window.location = "http://" + query;
 			break;
 
         default:
