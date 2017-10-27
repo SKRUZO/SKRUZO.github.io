@@ -2,7 +2,7 @@
 
 <html>
 
-<!-- 
+<!--
 	Multipurpose aesthetically appealing and partially forked adaptive startpage that displays a lot of useless information
 -->
 
@@ -11,9 +11,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="icon" sizes="128x128" href="Images/skruzo.png" />
 	<link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	
+
 	<title>&lrm;</title>
 
 </head>
@@ -21,23 +21,23 @@
 <body>
 
 	<div class="BG"></div>
-	
+
 	<div class="Main-container">
-		
+
 		<div class="Time-container">
 			<br><br>
 			<p class="TimeHMS" id="Time"></p>
 			<br>
 			<p class="TimeDate" id="Date"></p>
 		</div>
-		
+
 		<div class="Search-container">
 			<input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false" onfocus="blurBG()" oninput="blurBG()" onblur="unblurBG()" />
 			<span class="Bar"></span>
 		</div>
-		
+
 		<div class="Link-container">
-			
+
 			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
 				<img src="Images/c.png" class="Icons"/>
 				<div class="Link-index">
@@ -62,7 +62,7 @@
 					<a href="http://downdetector.com" class="Link">Downdetector</a>
 				</div>
 			</div>
-			
+
 			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
 				<img src="Images/b.png" class="Icons"/>
 				<div class="Link-index">
@@ -75,17 +75,18 @@
 					<a href="https://www.patreon.com/thedickshow/posts" class="Link">Dick Show</a>
 				</div>
 			</div>
-			
+
 			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
 				<img src="Images/d.png" class="Icons"/>
 				<div class="Link-index">
-					<a href="https://www.neogaf.com/forum/forumdisplay.php?f=2" class="Link">NEOGaf</a>
+					<a href="http://www.neogaf.com/forum/index.php" class="Link">NeoGAF</a>
+					<a href="https://www.resetera.com/" class="Link">ResetEra</a>
 					<a href="https://news.ycombinator.com/" class="Link">Hacker News</a>
-					<a href="http://www.jemgaming.net/" class="Link">Jemgaming</a>
 					<a href="https://forum.xda-developers.com/" class="Link">XDA Forum</a>
+					<a href="http://www.jemgaming.net/" class="Link">Jemgaming</a>
 				</div>
 			</div>
-			
+
 			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
 				<img src="Images/f.png" class="Icons"/>
 				<div class="Link-index">
@@ -95,7 +96,7 @@
 					<a href="https://amazon.com" class="Link">Amazon</a>
 				</div>
 			</div>
-			
+
 			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
 				<img src="Images/e.png" class="Icons"/>
 				<div class="Link-index">
@@ -109,12 +110,12 @@
 				</div>
 			</div>
 		</div>
-	
+
 	</div>
 
 	<script src="Script/jquery.simpleWeather.min.js"></script>
 	<script src="Script/main.js"></script>
 	<script src="Script/search.js"></script>
 	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-	
+
 </body>
