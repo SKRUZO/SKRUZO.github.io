@@ -50,33 +50,9 @@ setInterval(updateTime, 250);
 
 //Random background on page load
 //This could be a lot shorter if they all have the same extension but since this is a startpage so I value aesthetics more than code tidyness...
+//Syntax: 'Images/1.jpg',
 function randomBG(){
-	var images=['Images/1.jpg',
-				'Images/2.jpg',
-				'Images/3.jpg',
-				'Images/4.jpg',
-				'Images/5.jpg',
-				'Images/6.jpg',
-				'Images/7.jpg',
-				'Images/8.jpg',
-				'Images/9.jpg',
-				'Images/10.jpg',
-				'Images/11.jpg',
-				'Images/12.jpg',
-				'Images/13.jpg',
-				'Images/14.jpg',
-				'Images/15.jpg',
-				'Images/16.jpg',
-				'Images/17.jpg',
-				'Images/18.jpg',
-				'Images/19.jpg',
-				'Images/20.jpg',
-				'Images/21.jpg',
-				'Images/22.jpg',
-				'Images/23.jpg',
-				'Images/24.jpg',
-				'Images/25.jpg',
-				'Images/26.jpg'];
+	var images=['Images/1.jpg'];
 	
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
