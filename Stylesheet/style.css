@@ -121,6 +121,17 @@
 	height: 100%;
 }
 
+.Bio-container {
+	width: 40%;
+	margin: 4vh 16vh;
+	text-align: left;
+}
+
+.Bio-spacer {
+	height: 30%;
+	width: 60%;
+}
+
 /* --------Content Element Styles-------- */
 
 .TimeHMS {
@@ -228,4 +239,18 @@
 .Link:hover:after {
 	opacity: 1;
 	right: -2%;
+}
+
+.BioHeader {
+	
+	font-size: 5vh;
+	font-family: Baksheesh;
+	color: rgba(255, 255, 255, 1);
+}
+
+.BioContent {
+	margin: -2vh auto 2vh auto;
+	font-size: 2vh;
+	font-family: Baksheesh;
+	color: rgba(255, 255, 255, 1);
 }
