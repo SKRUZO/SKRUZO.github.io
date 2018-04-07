@@ -58,11 +58,7 @@ function randomBG(){
 				'Images/4.jpg',
 				'Images/5.jpg',
 				'Images/6.jpg',
-				'Images/7.jpg',
-				'Images/8.jpg',
-				'Images/9.jpg',
-				'Images/10.jpg',
-				'Images/11.jpg'];
+				'Images/7.jpg'];
 	
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
