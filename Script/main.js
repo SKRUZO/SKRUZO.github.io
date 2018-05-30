@@ -27,6 +27,7 @@ function updateTime() {
 	
 	//"World" time
 	var utcH = c.getUTCHours();
+	var pstH = utcH+5
 	var cstH = utcH+8
 	var jstH = utcH+9
 	
@@ -36,14 +37,18 @@ function updateTime() {
 	
 	if (jstH >= 24){
 		jstH = jstH-24;}
+
+	if (pstH >= 24){
+		pstH = pstH-24;}
 	
 	//Output
 	$('#Time').html(hr + ":" + min + ":" + sec);
 	$('#Week').html(day);
 	$('#Date').html(date + " " + mon + " " + yr);
-	$('#UTC').html(leadZero(utcH) + ":" + min);
-	$('#CST').html(leadZero(cstH) + ":" + min);
-	$('#JST').html(leadZero(jstH) + ":" + min);
+	$('#UTC').html(leadZero(utcH) + ":" + min + ":" + sec);
+	$('#PST').html(leadZero(pstH) + ":" + min + ":" + sec);
+	$('#CST').html(leadZero(cstH) + ":" + min + ":" + sec);
+	$('#JST').html(leadZero(jstH) + ":" + min + ":" + sec);
 	
 }
 setInterval(updateTime, 250);
@@ -52,14 +57,22 @@ setInterval(updateTime, 250);
 //This could be a lot shorter if they all have the same extension but since this is a startpage so I value aesthetics more than code tidyness...
 //Syntax: 'Images/1.jpg',
 function randomBG(){
-	var images=['Images/1.jpg',
-				'Images/2.jpg',
-				'Images/3.jpg',
-				'Images/4.jpg',
-				'Images/5.jpg',
-				'Images/6.jpg',
-				'Images/7.jpg'];
-	
+	var images=['Images/Summer/1.jpg',
+				'Images/Summer/2.jpg',
+				'Images/Summer/3.jpg',
+				'Images/Summer/4.jpg',
+				'Images/Summer/5.jpg',
+				'Images/Summer/6.jpg',
+				'Images/Summer/7.jpg',
+				'Images/Summer/8.jpg',
+				'Images/Summer/9.jpg',
+				'Images/Summer/10.jpg',
+				'Images/Summer/11.jpg',
+				'Images/Summer/12.jpg',
+				'Images/Summer/13.jpg',
+				'Images/Summer/14.jpg',
+				'Images/Summer/15.jpg'];
+
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
 	//Only way to get rid of white borders DO NOT middle click in Firefox or it ruins everything
