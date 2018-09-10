@@ -38,8 +38,8 @@ function updateTime() {
 	if (jstH >= 24){
 		jstH = jstH-24;}
 
-	if (pstH >= 24){
-		pstH = pstH-24;}
+	if (pstH > 12){
+		pstH = pstH-12;}
 	
 	//Output
 	$('#Time').html(hr + ":" + min + ":" + sec);
@@ -57,21 +57,21 @@ setInterval(updateTime, 250);
 //This could be a lot shorter if they all have the same extension but since this is a startpage so I value aesthetics more than code tidyness...
 //Syntax: 'Images/1.jpg',
 function randomBG(){
-	var images=['Images/Summer/1.jpg',
-				'Images/Summer/2.jpg',
-				'Images/Summer/3.jpg',
-				'Images/Summer/4.jpg',
-				'Images/Summer/5.jpg',
-				'Images/Summer/6.jpg',
-				'Images/Summer/7.jpg',
-				'Images/Summer/8.jpg',
-				'Images/Summer/9.jpg',
-				'Images/Summer/10.jpg',
-				'Images/Summer/11.jpg',
-				'Images/Summer/12.jpg',
-				'Images/Summer/13.jpg',
-				'Images/Summer/14.jpg',
-				'Images/Summer/15.jpg'];
+	var images=['Images/Fall/1.jpg',
+				'Images/Fall/2.jpg',
+				'Images/Fall/3.jpg',
+				'Images/Fall/4.jpg',
+				'Images/Fall/5.jpg',
+				'Images/Fall/6.jpg',
+				'Images/Fall/7.jpg',
+				'Images/Fall/8.jpg',
+				'Images/Fall/9.jpg',
+				'Images/Fall/10.jpg',
+				'Images/Fall/11.jpg',
+				'Images/Fall/12.jpg',
+				'Images/Fall/13.jpg',
+				'Images/Fall/14.jpg',
+				'Images/Fall/15.jpg'];
 
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
