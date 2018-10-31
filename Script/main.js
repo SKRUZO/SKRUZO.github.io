@@ -58,20 +58,20 @@ setInterval(updateTime, 250);
 //Syntax: 'Images/1.jpg',
 function randomBG(){
 	var images=['Images/Fall/1.jpg',
-				'Images/Fall/2.jpg',
-				'Images/Fall/3.jpg',
-				'Images/Fall/4.jpg',
-				'Images/Fall/5.jpg',
-				'Images/Fall/6.jpg',
-				'Images/Fall/7.jpg',
-				'Images/Fall/8.jpg',
-				'Images/Fall/9.jpg',
-				'Images/Fall/10.jpg',
-				'Images/Fall/11.jpg',
-				'Images/Fall/12.jpg',
-				'Images/Fall/13.jpg',
-				'Images/Fall/14.jpg',
-				'Images/Fall/15.jpg'];
+				'Images/Winter/2.jpg',
+				'Images/Winter/3.jpg',
+				'Images/Winter/4.jpg',
+				'Images/Winter/5.jpg',
+				'Images/Winter/6.jpg',
+				'Images/Winter/7.jpg',
+				'Images/Winter/8.jpg',
+				'Images/Winter/9.jpg',
+				'Images/Winter/10.jpg',
+				'Images/Winter/11.jpg',
+				'Images/Winter/12.jpg',
+				'Images/Winter/13.jpg',
+				'Images/Winter/14.jpg',
+				'Images/Winter/15.jpg'];
 
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
