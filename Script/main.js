@@ -27,7 +27,7 @@ function updateTime() {
 	
 	//"World" time
 	var utcH = c.getUTCHours();
-	var pstH = utcH+5
+	var pstH = utcH+4
 	var cstH = utcH+8
 	var jstH = utcH+9
 	
