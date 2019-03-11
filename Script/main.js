@@ -57,21 +57,21 @@ setInterval(updateTime, 250);
 //This could be a lot shorter if they all have the same extension but since this is a startpage so I value aesthetics more than code tidyness...
 //Syntax: 'Images/1.jpg',
 function randomBG(){
-	var images=['Images/Fall/1.jpg',
-				'Images/Winter/2.jpg',
-				'Images/Winter/3.jpg',
-				'Images/Winter/4.jpg',
-				'Images/Winter/5.jpg',
-				'Images/Winter/6.jpg',
-				'Images/Winter/7.jpg',
-				'Images/Winter/8.jpg',
-				'Images/Winter/9.jpg',
-				'Images/Winter/10.jpg',
-				'Images/Winter/11.jpg',
-				'Images/Winter/12.jpg',
-				'Images/Winter/13.jpg',
-				'Images/Winter/14.jpg',
-				'Images/Winter/15.jpg'];
+	var images=['Images/Spring/1.jpg',
+				'Images/Spring/2.jpg',
+				'Images/Spring/3.jpg',
+				'Images/Spring/4.jpg',
+				'Images/Spring/5.jpg',
+				'Images/Spring/6.jpg',
+				'Images/Spring/7.jpg',
+				'Images/Spring/8.jpg',
+				'Images/Spring/9.jpg',
+				'Images/Spring/10.jpg',
+				'Images/Spring/11.jpg',
+				'Images/Spring/12.jpg',
+				'Images/Spring/13.jpg',
+				'Images/Spring/14.jpg',
+				'Images/Spring/15.jpg'];
 
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
