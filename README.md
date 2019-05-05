@@ -1,3 +1,1 @@
-# Modified version of TheProtagonists' SPECTRUMStartpageV3
-A personally modified version of TheProtagonists' SpectrumStartpageV3 found here: https://github.com/TheProtagonists/SPECTRUMStartpageV3
-This is my personal fork which contains my own links and backgrounds. 
+Modified version of [0-Tikaro's "Minimum Viable Startpage"](https://github.com/0-Tikaro/minimum-viable-startpage) for personal use.

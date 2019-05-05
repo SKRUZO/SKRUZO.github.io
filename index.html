@@ -1,117 +1,31 @@
 <!DOCTYPE html>
-
-<html>
-
-<!-- 
-	Multipurpose aesthetically appealing and partially forked adaptive startpage that displays a lot of useless information
--->
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" sizes="128x128" href="Images/skruzo.png" />
-	<link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	
-	<title>&lrm;</title>
+    <!--Title of the page-->
+    <title>Home</title>
 
+    <!--Startpage icon - material house icon-->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,400">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-	<div class="BG"></div>
-	
-	<div class="Main-container" onmouseover="blurBG()">
-		
-		<div class="Time-container">
-			<br><br>
-			<p class="TimeHMS" id="PST"></p>
-			<br>
-			<p class="TimeDate" id="Date"></p>
-		</div>
-		
+	<div id="logo">
+		<h1 id="welcome-string"></h1>
 		<div class="Search-container">
-			<input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false" onfocus="blurBG()" oninput="blurBG()" />
-			<span class="Bar"></span>
-		</div>
-		
-		<div class="Link-container">
-			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
-				<img src="Images/c.png" class="Icons"/>
-				<div class="Link-index">
-					<a href="https://old.reddit.com/r/all" class="Link">r/All</a>
-					<a href="https://old.reddit.com/r/thedickshow" class="Link">r/TDS</a>
-					<a href="https://old.reddit.com/r/headphones" class="Link">r/Headphones</a>
-					<a href="https://old.reddit.com/r/AVexchange/new" class="Link">r/AVx</a>
-					<a href="https://old.reddit.com/r/guildwars2" class="Link">r/Guildwars2</a>
-					<a href="https://old.reddit.com/r/satisfactorygame" class="Link">r/Satisfactory</a>
-					<a href="https://old.reddit.com/r/dnd" class="Link">r/DnD</a>
-				</div>
-			</div>
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
-				<img src="Images/a.png" class="Icons"/>
-				<div class="Link-index">
-					<a href="https://unifi.ubnt.com" class="Link">Unifi</a>
-					<a href="https://secure1.inmotionhosting.com/index/login" class="Link">Inmotion</a>
-					<a href="https://github.com" class="Link">Github</a>
-					<a href="https://streamable.com/" class="Link">Streamable</a>
-					<a href="https://color.adobe.com/create/color-wheel" class="Link">Color Wheel</a>
-					<a href="https://stackoverflow.com/" class="Link">Stackoverflow</a>
-				</div>
-			</div>
-			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
-				<img src="Images/b.png" class="Icons"/>
-				<div class="Link-index">
-					<a href="https://www.youtube.com" class="Link">Youtube</a>
-					<a href="https://www.patreon.com/home" class="Link">Patreon</a>
-					<a href="https://www.netflix.com" class="Link">Netflix</a>
-					<a href="https://www.twitch.tv" class="Link">Twitch</a>
-				</div>
-			</div>
-			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
-				<img src="Images/d.png" class="Icons"/>
-				<div class="Link-index">
-					<a href="https://news.ycombinator.com/" class="Link">Hacker News</a>
-					<a href="https://news.google.com" class="Link">Google News</a>
-					<a href="https://www.reuters.com/" class="Link">Reuters</a>
-					<a href="https://www.wsj.com/" class="Link">WSJ</a>
-					<a href="https://www.thejempire.com" class="Link">Jemgaming</a>
-				</div>
-			</div>
-			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
-				<img src="Images/f.png" class="Icons"/>
-				<div class="Link-index">
-					<a href="https://app.roll20.net/campaigns/search/" class="Link">Roll20</a>
-					<a href="https://metabattle.com/wiki/MetaBattle_Wiki" class="Link">Metabattle</a>
-					<a href="https://snowcrows.com/" class="Link">Snowcrows</a>
-					<a href="https://www.satisfactorymap.com" class="Link">SatMap</a>
-					<a href="https://satisfactory.gamepedia.com/Satisfactory_Wiki" class="Link">SatWiki</a>
-					<a href="https://satisfactory.greeny.dev/calculator" class="Link">SatCalc</a>
-				</div>
-			</div>
-			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
-				<img src="Images/e.png" class="Icons"/>
-				<div class="Link-index">
-					<a href="https://mail.google.com" class="Link">Gmail</a>
-					<a href="https://drive.google.com/drive/my-drive" class="Link">Google Drive</a>
-					<a href="https://www.massdrop.com/audiophile/drops" class="Link">Massdrop</a>
-					<a href="https://amazon.com" class="Link">Amazon</a>
-					<a href="https://olympic.instructure.com/" class="Link">Olympic</a>
-				</div>
-			</div>
-		</div>
-	
+            <input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false"/>
+            <span class="Bar"></span>
+        </div>
 	</div>
-
-	<script src="Script/jquery.simpleWeather.min.js"></script>
-	<script src="Script/main.js"></script>
-	<script src="Script/search.js"></script>
-	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-	
+	<div id="content">
+		<!--Filled dynamically by script.js. Edit `MASTER_MAP` inside the script to change page's contents-->
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+    <script src="search.js"></script>
 </body>
+</html>
