@@ -38,11 +38,10 @@ const MASTER_MAP = [
     {
         "groupName": "Personal",
         "items":[
-            {"name": "Gmail", "shortcutKey": "a", "url": "https://mail.google.com"},
+            {"name": "Gmail", "shortcutKey": "d", "url": "https://mail.google.com"},
             {"name": "Massdrop", "shortcutKey": "s", "url": "https://www.massdrop.com/audiophile/drops"},
-            {"name": "Amazon", "shortcutKey": "d", "url": "https://amazon.com"},
-            {"name": "Olympic", "shortcutKey": "f", "url": "https://olympic.instructure.com/"},
-            {"name": "Amazon", "shortcutKey": "z", "url": "https://amazon.com"},
+            {"name": "Amazon", "shortcutKey": "a", "url": "https://amazon.com"},
+            {"name": "Olympic", "shortcutKey": "z", "url": "https://olympic.instructure.com/"},
             {"name": "Drive", "shortcutKey": "x", "url": "https://drive.google.com/drive/my-drive"}
         ]
     }
