@@ -27,7 +27,7 @@ const MASTER_MAP = [
     {
         "groupName": "Other",
         "items":[
-            {"name": "Roll20", "shortcutKey": "", "url": "https://www.patreon.com/home"},
+            {"name": "Roll20", "shortcutKey": "", "url": "https://app.roll20.net/campaigns/search"},
             {"name": "MetaBattle", "shortcutKey": "", "url": "https://metabattle.com/wiki/MetaBattle_Wiki"},
             {"name": "SnowCrows", "shortcutKey": "", "url": "https://snowcrows.com/"},
             {"name": "SatMap", "shortcutKey": "", "url": "https://www.satisfactorymap.com"},
