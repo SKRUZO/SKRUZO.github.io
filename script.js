@@ -30,9 +30,8 @@ const MASTER_MAP = [
             {"name": "Roll20", "shortcutKey": "", "url": "https://app.roll20.net/campaigns/search"},
             {"name": "MetaBattle", "shortcutKey": "", "url": "https://metabattle.com/wiki/MetaBattle_Wiki"},
             {"name": "SnowCrows", "shortcutKey": "", "url": "https://snowcrows.com/"},
-            {"name": "SatMap", "shortcutKey": "", "url": "https://www.satisfactorymap.com"},
-            {"name": "SatWiki", "shortcutKey": "", "url": "https://satisfactory.gamepedia.com/Satisfactory_Wiki"},
-            {"name": "SatCalc", "shortcutKey": "", "url": "https://satisfactory.greeny.dev/calculator"}
+            {"name": "Strava", "shortcutKey": "", "url": "https://www.strava.com/dashboard"},
+            {"name": "Alltrails", "shortcutKey": "", "url": "https://www.alltrails.com/"},
         ]
     },
     {
