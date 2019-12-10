@@ -16,20 +16,16 @@ const MASTER_MAP = [
     {
         "groupName": "Entertainment",
         "items":[
-            {"name": "Reddit", "shortcutKey": "q", "url": "https://old.reddit.com/r/all"},
-            {"name": "/r/AvX", "shortcutKey": "w", "url": "https://old.reddit.com/r/AVexchange/new"},
             {"name": "YouTube", "shortcutKey": "e", "url": "https://www.youtube.com"},
             {"name": "Patreon", "shortcutKey": "r", "url": "https://www.patreon.com/home"},
-            {"name": "Netflix", "shortcutKey": "", "url": "https://www.netflix.com"},
-            {"name": "Twitch", "shortcutKey": "", "url": "https://www.twitch.tv"}
+            {"name": "Netflix", "shortcutKey": "", "url": "https://www.netflix.com"}
         ]
     },
     {
         "groupName": "Other",
         "items":[
             {"name": "Roll20", "shortcutKey": "", "url": "https://app.roll20.net/campaigns/search"},
-            {"name": "MetaBattle", "shortcutKey": "", "url": "https://metabattle.com/wiki/MetaBattle_Wiki"},
-            {"name": "SnowCrows", "shortcutKey": "", "url": "https://snowcrows.com/"},
+            {"name": "MHW Wiki", "shortcutKey": "", "url": "https://monsterhunterworld.wiki.fextralife.com/Monster+Hunter+World+Wiki"},
             {"name": "Strava", "shortcutKey": "", "url": "https://www.strava.com/dashboard"},
             {"name": "Alltrails", "shortcutKey": "", "url": "https://www.alltrails.com/"},
         ]
@@ -38,7 +34,6 @@ const MASTER_MAP = [
         "groupName": "Personal",
         "items":[
             {"name": "Gmail", "shortcutKey": "d", "url": "https://mail.google.com"},
-            {"name": "Massdrop", "shortcutKey": "s", "url": "https://www.massdrop.com/audiophile/drops"},
             {"name": "Amazon", "shortcutKey": "a", "url": "https://amazon.com"},
             {"name": "Olympic", "shortcutKey": "z", "url": "https://olympic.instructure.com/"},
             {"name": "Drive", "shortcutKey": "x", "url": "https://drive.google.com/drive/my-drive"}
