@@ -25,7 +25,6 @@ const MASTER_MAP = [
         "groupName": "Other",
         "items":[
             {"name": "Roll20", "shortcutKey": "", "url": "https://app.roll20.net/campaigns/search"},
-            {"name": "MHW Wiki", "shortcutKey": "", "url": "https://monsterhunterworld.wiki.fextralife.com/Monster+Hunter+World+Wiki"},
             {"name": "Strava", "shortcutKey": "", "url": "https://www.strava.com/dashboard"},
             {"name": "Alltrails", "shortcutKey": "", "url": "https://www.alltrails.com/"},
         ]
@@ -35,7 +34,7 @@ const MASTER_MAP = [
         "items":[
             {"name": "Gmail", "shortcutKey": "d", "url": "https://mail.google.com"},
             {"name": "Amazon", "shortcutKey": "a", "url": "https://amazon.com"},
-            {"name": "Olympic", "shortcutKey": "z", "url": "https://olympic.instructure.com/"},
+            {"name": "Western", "shortcutKey": "z", "url": "https://mywestern.wwu.edu/"},
             {"name": "Drive", "shortcutKey": "x", "url": "https://drive.google.com/drive/my-drive"}
         ]
     }
