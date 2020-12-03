@@ -18,7 +18,8 @@ const MASTER_MAP = [
         "items":[
             {"name": "YouTube", "shortcutKey": "e", "url": "https://www.youtube.com"},
             {"name": "Patreon", "shortcutKey": "r", "url": "https://www.patreon.com/home"},
-            {"name": "Netflix", "shortcutKey": "", "url": "https://www.netflix.com"}
+            {"name": "Netflix", "shortcutKey": "", "url": "https://www.netflix.com"},
+            {"name": "Last.FM", "shortcutKey": "", "url": "https://www.last.fm/user/Calvin-H"}
         ]
     },
     {
