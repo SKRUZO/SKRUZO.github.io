@@ -34,7 +34,7 @@ const MASTER_MAP = [
         "groupName": "Personal",
         "items":[
             {"name": "Gmail", "shortcutKey": "d", "url": "https://mail.google.com"},
-            {"name": "Amazon", "shortcutKey": "a", "url": "https://amazon.com"},
+            {"name": "Amazon", "shortcutKey": "a", "url": "https://smile.amazon.com"},
             {"name": "Western", "shortcutKey": "z", "url": "https://mywestern.wwu.edu/"},
             {"name": "Drive", "shortcutKey": "x", "url": "https://drive.google.com/drive/my-drive"}
         ]
