@@ -1,1 +1,2 @@
-Modified version of [0-Tikaro's "Minimum Viable Startpage"](https://github.com/0-Tikaro/minimum-viable-startpage) for personal use.
+Modified version of [u/Schweinekruste92 Startpage](https://www.reddit.com/r/startpages/comments/nf4uh9/quick_and_easy_startpage_for_my_work_macbook/) rebuilt and adjusted for personal use. 
+Added custom welcome message from previous startpage, and embedded SVG icons for common sites.

@@ -1,0 +1,132 @@
+/** nordtheme
+https://www.nordtheme.com/
+https://github.com/arcticicestudio/nord
+**/
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead; }
+
+:root {
+  --cl: white;
+  --bg-image: url("wall.jpg");
+}
+
+*  {
+  box-sizing: border-box; }
+
+body {
+  background: var(--nord0);
+  background:-nord0;
+  overflow-x: hidden;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh; 
+  animation: fadein 1s;}
+  body:before {
+    content: '';
+    display: block;
+    background: no-repeat center center fixed var(--bg-image);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    z-index: -1; }
+    
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto; }
+
+[id="clock"] {
+  text-align: center; }
+  [id="clock"]:before {
+    content: attr(data-time);
+    font-size: 60px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 200;
+    letter-spacing: -0.025em;
+    display: block; }
+  [id="clock"][data-date]:after {
+    content: attr(data-date);
+    display: block;
+    opacity: .6; }
+
+h1 {
+      text-align: center;
+      font-size: 80px;
+      font-variant-numeric: tabular-nums;
+      font-weight: 300;
+      margin-bottom: 0;
+  }
+
+nav {
+  padding: 40px 0 100px; }
+  nav ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    nav ul li a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--cl);
+      padding: 20px;
+      box-shadow: inset 0 -2px 0 0 var(--cl);
+      border-radius: 7px;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      background: var(--nord0);
+      transition: .4s background-color;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none; }
+      nav ul li a svg {
+        width: 1em;
+        height: 1em;
+        font-size: 500%;
+        transition: .4s; }
+      nav ul li a > label {
+        height: 0; }
+        nav ul li a > label > span {
+          display: block;
+          transform: translateY(-20px);
+          opacity: 0;
+          transition: .4s; }
+      nav ul li a:hover {
+        background: var(--cl);
+        color: white;
+        box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.4); }
+        nav ul li a:hover > svg {
+          transform: translateY(-5px); }
+        nav ul li a:hover > label > span {
+          transform: translateY(0px);
+          opacity: 1; }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
