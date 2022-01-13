@@ -22,7 +22,7 @@ https://github.com/arcticicestudio/nord
 
 :root {
   --cl: white;
-  --bg-image: url("wall.jpg");
+  --bg-image: url("wall.png");
 }
 
 *  {
