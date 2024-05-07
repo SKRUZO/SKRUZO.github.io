@@ -72,6 +72,19 @@ main {
     display: block;
     opacity: .6; }
 
+[id="stroke"] {
+  text-shadow: 
+    -3px -3px 0 var(--nord0),  
+    0px -3px 0 var(--nord0),
+    3px -3px 0 var(--nord0),  
+    -3px 0px 0 var(--nord0),
+    3px 0px 0 var(--nord0),  
+    -3px 3px 0 var(--nord0),
+    0px 3px 0 var(--nord0),
+    3px 3px 0 var(--nord0);
+    }
+
+
 h1 {
       text-align: center;
       font-size: 80px;
