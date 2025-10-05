@@ -25,3 +25,10 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+assets/img/favicons/mstile-150x150.pngZone.Identifier
+assets/img/favicons/favicon.icoZone.Identifier
+assets/img/favicons/favicon-32x32.pngZone.Identifier
+assets/img/favicons/favicon-16x16.pngZone.Identifier
+assets/img/favicons/apple-touch-icon.pngZone.Identifier
+assets/img/favicons/android-chrome-512x512.pngZone.Identifier
+assets/img/favicons/android-chrome-192x192.pngZone.Identifier
